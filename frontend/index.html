@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neighbourhood Reuse | Give a little, help a neighbour</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script src="js/api.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script type="module" src="js/hero-scene.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">♻ Neighbourhood Reuse</a>
+    <nav>
+      <a href="browse.html">Browse items</a>
+      <a href="post-item.html">Donate an item</a>
+      <a href="dashboard.html">Dashboard</a>
+      <span id="nav-auth"></span>
+    </nav>
+  </header>
+  <main>
+    <section class="hero hero-home">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=2000&q=88" alt="A welcoming community library filled with books">
+      <canvas id="hero-scene" class="hero-scene" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow">A kinder, less wasteful neighbourhood</p>
+        <h1>Neighbourhood <span>Reuse</span></h1>
+        <h2 class="hero-subtitle">Give useful things a second life.</h2>
+        <p>Pass on items you no longer need and help someone nearby. No selling, no payments — just community sharing.</p>
+        <div class="hero-actions">
+          <a class="button" href="browse.html">Find free items</a>
+          <a class="button button-light" href="post-item.html">Donate something</a>
+        </div>
+        <p class="small muted">Supporting SDG 12: Responsible Consumption and Production.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading"><div><p class="eyebrow">How it works</p><h2>Small acts make a difference</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature"><span>01</span><h3>Share what you can</h3><p>Post a useful item with a photo, condition and approximate location.</p></article>
+        <article class="feature"><span>02</span><h3>Find nearby items</h3><p>Browse donations and search by category or neighbourhood.</p></article>
+        <article class="feature"><span>03</span><h3>Connect respectfully</h3><p>Send a request and let the donor confirm the handover.</p></article>
+      </div>
+    </section>
+    <section class="section soft-section">
+      <div class="section-heading"><div><p class="eyebrow">Recently shared</p><h2>Items looking for a new home</h2></div><a href="browse.html">View all →</a></div>
+      <div id="featured-items" class="item-grid"><p class="muted">Loading donations…</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>Neighbourhood Reuse & Donation Platform · Community Engagement Project · SDG 12</p></footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* Responsive rules are included in style.css. Link this file if you prefer to keep
+   mobile-specific overrides separate. */
+@media (max-width: 560px) {
+  .site-header nav { flex-wrap: wrap; }
+  .item-grid { grid-template-columns: 1fr; }
+}
