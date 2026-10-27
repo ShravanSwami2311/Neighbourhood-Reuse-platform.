@@ -1,4 +1,8 @@
-const API_BASE = "http://localhost:5000/api";
+const localHosts = ["localhost", "127.0.0.1", "::1"];
+const defaultApiBase = localHosts.includes(window.location.hostname)
+  ? `http://${window.location.hostname === "::1" ? "[::1]" : window.location.hostname}:5000/api`
+  : `${window.location.origin}/api`;
+const API_BASE = (window.API_BASE_URL || defaultApiBase).replace(/\/+$/, "");
 
 function getToken() {
   return localStorage.getItem("nr_token");
