@@ -14,7 +14,10 @@ app.use(cors({
   origin: allowedOrigins
 }));
 app.use(express.json({ limit: "1mb" }));
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/index.html"));
+});
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 app.get("/", (req, res) => res.json({ message: "Neighbourhood Reuse & Donation Platform API is running." }));
 app.get("/api/health", async (req, res, next) => {
